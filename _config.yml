@@ -57,7 +57,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Hi! My name is Herinson Rodrigues"
-  - text: "I'm Web/Mobile/Desktop developer"
+  - text: "I'm Web/Desktop developer"
 
 me-img: "/img/me.png"
 
@@ -113,7 +113,7 @@ events:
   - image: "/img/timeline/labtocat.png"
     date: "August 2010 - Today"
     description: "Bachelor in Computer Science at Federal University of Tocantins - Brazil"
-  - image: "/img/timeline/collabocats.jpg "
+  - image: "/img/timeline/collabocats.jpg"
     date: "June 2012 - Today"
     description: "Started contributing to Open Source projects on Github"    
   - image: "/img/timeline/kangaroo.png"
