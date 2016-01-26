@@ -104,14 +104,14 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/red-polo.png"
+  - image: "/img/timeline/ifpi.png"
     date: "February 2006 - November 2009"
     description: "Technician in Information Technology at [Federal Institute of Piaui](http://floriano.ifpi.edu.br/
 ) - Brazil"
   - image: "/img/timeline/inspectocat.jpg"
     date: "April 2006 - Today"
     description: "Started coding"
-  - image: "/img/timeline/labtocat.png"
+  - image: "/img/timeline/uft.jpg"
     date: "August 2010 - Today"
     description: "Bachelor in Computer Science at [Federal University of Tocantins](http://www.uft.edu.br) - Brazil"
   - image: "/img/timeline/collabocats.jpg"
@@ -149,8 +149,6 @@ social:
     url: "https://facebook.com/herodriguess"
   - title: "github"
     url: "https://github.com/herodrigues"
-  - title: "envelope"
-    url: "mailto:herinson.br@gmail.com"
   - title: "stack-overflow"
     url: "https://stackoverflow.com/users/4913642/herodrigues"
   - title: "flask"
