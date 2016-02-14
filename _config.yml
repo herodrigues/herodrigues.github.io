@@ -1,80 +1,64 @@
 
 # Site settings
 
-# NB! Set your site's url, otherwise stuff will break :)
-
 url: "https://herodrigues.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path :)
-
 baseurl: ""
-
-# Google tracking id to track your visitors
-
 google-tracking-id: "UA-68009625-1"
-
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-
 force-https: True
 
-#############
-# HTML Head #
-#############
+syntax-highlight: True
 
-lang: "en"
-author: "Herinson Rodrigues"
-title: "@herodrigues"
-description: "Blog and website of Herinson Rodrigues"
-keywords: "rodrigues, herinson, web, developer, brazil"
-favicon: "/img/favicon.ico"
-404-img: "/img/labtocat.png"
+# Sections shown in the index page
 
-################
-# Header layout #
-################
-
-black-favicon: "/img/black-lab-glass.ico"
-
-background-img: "../img/intro-bg.jpg"
-
-##############################
-# Dynamic Text on the Header #
-##############################
-
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 5000
-lines: # You can add HTML Tags in the Text
-  - text: "Hi! My name is Herinson Rodrigues"
-  - text: "I'm Web/Desktop developer"
-
-me-img: "/img/me.png"
-
-################
-# Web app mode #
-################
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
 
 web-app-mode: True
 
-# Icons for Web App mode
-
+# Icons for Chrome Web App mode https://developer.chrome.com/multidevice/android/installtohomescreen
 icon-36p: "/img/web-app/icon-36p.png"
 icon-48p: "/img/web-app/icon-48p.png"
 icon-72p: "/img/web-app/icon-72p.png"
 icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
+
+#############
+# HTML Head #
+#############
+
+author: "Herinson Rodrigues"
+lang: "en"
+title: "@herodrigues"
+favicon: "/img/favicon.ico"
+description: "Blog and website of Herinson Rodrigues"
+keywords: "rodrigues, herinson, web, developer, brazil"
+
+################
+# Intro layout #
+################
+
+black-favicon: "/img/black-lab-glass.ico"
+background-img: "../img/opera.jpg"
+me-img: "/img/me.jpg"
+
+##############################
+# Dynamic Text on the header #
+##############################
+
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: False
+loop-count: 1 # Set False for infinite loop, or set any number for finite loop.
+type-speed: 4
+start-delay: 2000
+delete-delay: 50000
+lines: # You can add HTML Tags in the Text
+  - text: "Hi! My name is Herinson Rodrigues"
+  - text: "I'm Web/Desktop developer"
 
 ########
 # Blog #
@@ -97,11 +81,9 @@ vkontakte-share: True
 
 disqus-shortname: "herodrigues"
 
-syntax-highlight: True
-
-############
-# Timeline #
-############
+###############
+# Life Events #
+###############
 
 events:
   - image: "/img/timeline/ifpi.png"
@@ -130,13 +112,12 @@ events:
     date: "October 2015 - Today"
     description: "Web developer at [58phases](http://58phases.com)"     
 
-# First image of the Timeline
+# First image of the Career timeline
+timeline-img: "/img/career/default.jpg"
 
-timeline-img: "/img/timeline/default.png"
-
-###########
-# Contact #
-###########
+##################
+# Contact layout #
+##################
 
 email: "herinson.br@uft.edu.br"
 
