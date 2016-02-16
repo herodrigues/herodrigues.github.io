@@ -1,10 +1,10 @@
 
 # Site settings
 
-url: "http://herodrigues.me"
+url: "http://www.herodrigues.me"
 baseurl: ""
 google-tracking-id: "UA-68009625-1"
-force-https: True
+force-https: False
 
 syntax-highlight: True
 
@@ -58,7 +58,7 @@ start-delay: 2000
 delete-delay: 50000
 lines: # You can add HTML Tags in the Text
   - text: "Hi! My name is Herinson Rodrigues"
-  - text: "I'm Web/Desktop developer"
+  - text: "I'm a Web/Desktop developer"
 
 ########
 # Blog #
