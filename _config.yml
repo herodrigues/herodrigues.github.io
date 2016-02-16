@@ -1,7 +1,7 @@
 
 # Site settings
 
-url: "https://herodrigues.me"
+url: "http://herodrigues.me"
 baseurl: ""
 google-tracking-id: "UA-68009625-1"
 force-https: True
