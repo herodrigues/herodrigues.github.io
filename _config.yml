@@ -4,7 +4,7 @@
 url: "http://www.herodrigues.me"
 baseurl: ""
 google-tracking-id: "UA-68009625-1"
-force-https: True
+force-https: False
 
 syntax-highlight: True
 
