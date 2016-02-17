@@ -42,7 +42,7 @@ keywords: "rodrigues, herinson, web, developer, brazil"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/opera.jpg"
+background-img: "../img/intro-bg.jpg"
 me-img: "/img/me.png"
 
 ##############################
@@ -141,6 +141,15 @@ social:
 
 404-img: "/img/labtocat.png"
 
+###############
+# Highlighter #
+###############
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
 ################################################################################
 
 # NB! Tread carefully if you want to change the variables below this point!
