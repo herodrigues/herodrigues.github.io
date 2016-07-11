@@ -3,7 +3,7 @@
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 disqus: herodrigues
 google_analytics: UA-68009625-1
@@ -26,7 +26,6 @@ author:
   stackoverflow: 4913642/herodrigues
   lattes: "8487847834781115"
   bio: Almost computer scientist,<br> web developer by accident<br> and science lover
-  email_md5: 4a0d7b2485f9de6a3d581f66a43714b0
 
 images:
   favicon: "/assets/ico/favicon.ico"
@@ -40,6 +39,3 @@ tags_path: tags.html
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
 BASE_PATH:
-
-gems:
-  - jekyll-paginate
