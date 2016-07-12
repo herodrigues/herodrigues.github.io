@@ -1,17 +1,18 @@
 ---
 layout: page
 tagline:
+title: Blog
 ---
 
 {% for post in paginator.posts %}
 
 <article class="home">
 
-  <h2>
+  <h4>
     <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-  
-  <span class="post-date">
+  </h4>
+
+  <span class="post-date" style="font-size: 12px;">
     {% assign d = post.date | date: "%d" | plus:'0' %}
     {{ post.date | date: "%B" }}
     {% case d %}

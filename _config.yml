@@ -9,12 +9,12 @@ disqus: herodrigues
 google_analytics: UA-68009625-1
 title: Herinson Rodrigues
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: "@herodrigues"
+#defaults:
+#  -
+#    scope:
+#      path: "" # empty string for all files
+#    values:
+#      title: "@herodrigues"
 
 description: Almost computer scientist
 author:
@@ -31,7 +31,7 @@ images:
   favicon: "/assets/ico/favicon.ico"
   profile: "/assets/media/me.png"
 
-rss_path:
+publications_path: publications.html
 categories_path: categories.html
 tags_path: tags.html
 
