@@ -3,7 +3,7 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
-  gem "pygments.rb"
+  gem "jekyll-polyglot"
   gem "html-proofer"
+  gem "kramdown"
 end
-
