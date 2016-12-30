@@ -10,6 +10,7 @@ kramdown:
 disqus: herodrigues
 google_analytics: UA-68009625-1
 title: Herinson Rodrigues
+permalink: pretty
 
 #defaults:
 #  -
@@ -18,24 +19,22 @@ title: Herinson Rodrigues
 #    values:
 #      title: "@herodrigues"
 
-description: Almost computer scientist
+description: Keep coding
 author:
   name: Herinson Rodrigues
   email: herinson.br@gmail.com
   github: herodrigues
-  twitter: herodriguess
-  facebook: herodriguess
   stackoverflow: 4913642/herodrigues
   lattes: "8487847834781115"
-  bio: Almost computer scientist,<br> web developer by accident<br> and science lover
+  bio: Bachelor in Computer Science, <br> web developer by accident<br> and science lover
 
 images:
   favicon: "/assets/ico/favicon.ico"
-  profile: "/assets/media/me.png"
+  profile: "https://avatars1.githubusercontent.com/u/1832537?v=3&s=150"
 
-publications_path: publications.html
-categories_path: categories.html
-tags_path: tags.html
+publications_path: publications
+categories_path: categories
+tags_path: tags
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
@@ -50,4 +49,3 @@ parallel_localization: true
 
 gems:
   - jekyll-paginate
-  - jekyll-polyglot
