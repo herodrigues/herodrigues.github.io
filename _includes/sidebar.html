@@ -23,6 +23,13 @@
 			</a>
 		</li>
 		{% endif %}
+		{% if site.author.researcherid %}
+		<li>
+			<a class="btn btn-default btn-sm" href="http://www.researcherid.com/rid/{{ site.author.researcherid }}" target="_blank">
+				<i class="fa fa-registered fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		{% if site.author.stackoverflow %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank">
