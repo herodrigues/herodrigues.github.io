@@ -71,24 +71,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/" style="float: left !important; margin-left: 15px;">
+				<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/">
 					<i class="fa fa-home"></i>
 				</a>
-				{% if site.author.github %}
-				<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-					<i class="fa fa-github"></i>
-				</a>
-				{% endif %}
-				{% if site.author.twitter %}
-				<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-					<i class="fa fa-twitter"></i>
-				</a>
-				{% endif %}
-				{% if site.author.email %}
-				<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-					<i class="fa fa-envelope"></i>
-				</a>
-				{% endif %}
 			</div>
 			<div class="image-wrap" style="width: 50%; margin: 0 auto;">
 				<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
