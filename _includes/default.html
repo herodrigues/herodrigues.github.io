@@ -70,6 +70,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/" style="float: left !important; margin-left: 15px;">
+					<i class="fa fa-home"></i>
+				</a>
 				{% if site.author.github %}
 				<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
 					<i class="fa fa-github"></i>
@@ -86,7 +89,7 @@
 				</a>
 				{% endif %}
 			</div>
-			<div style="width: 50%; margin: 0 auto;">
+			<div class="image-wrap" style="width: 50%; margin: 0 auto;">
 				<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
 					<div style="margin-bottom: 15px;">
 						<img src="{{ site.images.profile }}" class="img-circle" alt="Me!"/>
@@ -101,26 +104,14 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
 				<li><a href="{{ site.BASE_PATH}}/{{ site.publications_path }}">Publications</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.talks_path }}">Talks</a></li>
 				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group hidden-xs" id="nav-menu">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			<i class="fa fa-bars"></i>
-		</button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.publications_path }}"><i class="fa fa-file-text-o"></i>Publications</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
-			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
-		</ul>
-	</div>
+
 
 	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat center center !important;{% endif %}">
 		{% include sidebar.html %}
@@ -132,7 +123,7 @@
 		<footer>
 			<hr/>
 			<p class="text-center">
-				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} <br /> Theme based on <a href="https://github.com/dbtek/dbyll">dbyll</a>.
 			</p>
 		</footer>
 	</div>

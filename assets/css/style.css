@@ -1,5 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
+div#sidebar-menu {
+	font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin-left: 0;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+div#sidebar-menu a:link, div#sidebar-menu a:visited {
+	color: #fff;
+}
+
+div#sidebar-menu a:hover {
+	text-decoration: none;
+}
+
+p {
+	font-size: medium !important;
+}
+
 body{
 	color: #2c3e50;
 }
@@ -12,10 +33,18 @@ body{
 	color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .image-wrap  {
+		visibility: hidden;
+    display: none;
+  }
+}
+
 .sidebar-header {
 	text-align: center;
 	margin-bottom: 10px;
 }
+
 .sidebar-header .title{
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -82,9 +111,9 @@ article .share .gplus:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    .page-header{
-        margin-right: 70px;
-    }
+  .page-header {
+    margin-right: 70px;
+  }
 }
 
 article{
@@ -139,9 +168,17 @@ article.home h4 a:hover {
   margin-right: 20px;
 }
 
+hr {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
 footer {
-	padding-top: 15px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
 	font-family: 'Ubuntu';
+	background-color: #fff;
 }
 
 /* nav-vertical-tabs component */

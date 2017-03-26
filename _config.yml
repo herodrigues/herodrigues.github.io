@@ -24,9 +24,9 @@ author:
   name: Herinson Rodrigues
   email: herinson.br at gmail dot com
   github: herodrigues
-  stackoverflow: 4913642/herodrigues
+  #stackoverflow: 4913642/herodrigues
   lattes: "8487847834781115"
-  researcherid: "D-5273-2017"
+  #researcherid: "D-5273-2017"
   bio: Bachelor in Computer Science, <br> web developer by accident<br> and science lover
 
 images:
@@ -35,7 +35,7 @@ images:
 
 publications_path: publications
 categories_path: categories
-tags_path: tags
+talks_path: talks
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
