@@ -6,7 +6,7 @@ category: javascript
 ---
 
 If you have tried to develop a Chrome extension, you must know that the struggle is real. The [Webstore Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard
-) looks like a cemetery and we all know what happens when Google does not implement their new *cool design* in their products (RIP [Picasa Web](http://googlephotos.blogspot.com.br/2016/02/moving-on-from-picasa.html)). Besides that, you always need to reload your extensions and also the active tab where your scripts are injected. All this work just to make a single change! Hopefully, there are several tools that can prevent you for doing such boring tasks and I'll be showing them in this article.
+) looks like a cemetery and we all know what happens when Google does not implement their new *cool design* in their products (R.I.P. [Picasa Web](http://googlephotos.blogspot.com.br/2016/02/moving-on-from-picasa.html)). Besides that, you always need to reload your extensions and also the active tab where your scripts are injected. All this work just to make a single change! Hopefully, there are several tools that can prevent you for doing such boring tasks and I'll be showing them in this article.
 
 By trying to not freak out, I spent some days searching for projects that integrate React and any predictable state container library on Google and Github. Guess what? I found almost nothing related to that. So, time was running out and I needed to integrate the current layout of [Guru extension](https://chrome.google.com/webstore/detail/guru/ekahpenefeneekjoanbhkodldleballn), which had changed a lot since v2. I couldn't complete that task in time, so I decided to keep going with static HTML files and postpone the React/Flux/Redux/Whatever integration to v4.
 
@@ -14,7 +14,7 @@ But now, we have something.
 
 ### The idea
 
-**Refluxme** is a basic exampleof a Chrome extension that puts together a [React App](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) using [Flux TodoMVC](https://github.com/facebook/flux/tree/master/examples/flux-todomvc) logic flow.
+**Refluxme** is a basic example of a Chrome extension that puts together a [React App](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) using [Flux TodoMVC](https://github.com/facebook/flux/tree/master/examples/flux-todomvc) logic flow.
 
 The core idea is to use only background scripts to handle logic the extensions logic and dispatch actions to the React UI. On the other hand, content scripts also send user actions to background scripts and receive a response. By doing this, we'll have a two-way communication method between content and background scripts.
 
