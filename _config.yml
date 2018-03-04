@@ -27,7 +27,7 @@ author:
   # stackoverflow: 4913642/herodrigues
   lattes: "8487847834781115"
   # researcherid: "D-5273-2017"
-  bio: Bachelor in Computer Science, <br> web developer by accident<br> and science lover
+  bio: Graduate student in Computing, <br>web developer and science lover.
 
 images:
   favicon: "/assets/ico/favicon.ico"
@@ -36,6 +36,7 @@ images:
 publications_path: publications
 categories_path: categories
 education_path: education
+research_path: research
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
