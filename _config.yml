@@ -22,7 +22,7 @@ permalink: pretty
 description: Keep learning
 author:
   name: Herinson Rodrigues
-  email: herinson.br@uft.edu.br
+  email: herodrigues at uft dot edu dot br
   github: herodrigues
   # stackoverflow: 4913642/herodrigues
   lattes: "8487847834781115"
@@ -34,7 +34,6 @@ images:
   profile: "https://avatars1.githubusercontent.com/u/1832537?v=3&s=150"
 
 publications_path: publications
-categories_path: categories
 education_path: education
 research_path: research
 
