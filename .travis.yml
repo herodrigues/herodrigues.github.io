@@ -1,10 +1,17 @@
 language: ruby
 rvm:
-    - 2.4.0
+  - 2.3.0
+
 install:
-- export PATH=$HOME/.local/bin:$PATH
-- gem install jekyll html-proofer jekyll-paginate kramdown
-script: JEKYLL_ENV=production jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --alt-ignore '/.*/' --url-ignore "/#.*/"
-env:
-    global:
-        - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - export PATH=$HOME/.local/bin:$PATH
+  - gem install jekyll
+  - gem install jekyll-sitemap
+  - gem install jekyll-paginate
+  - gem install jekyll-gist
+  - gem install redcarpet
+script:
+  - jekyll build --incremental
+
+branches:
+  only:
+- master
