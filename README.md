@@ -1,4 +1,4 @@
-# My personal website [![Build Status](https://travis-ci.org/herodrigues/herodrigues.github.io.svg?branch=master)](https://travis-ci.org/herodrigues/herodrigues.github.io)
+# herodrigues.me [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=herodrigues.me&style=for-the-badge)](https://herodrigues.me/)
 
 Hey! This is my personal website repository. 
 
