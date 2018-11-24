@@ -1,15 +1,52 @@
----
-layout: page
-tagline:
-title: Blog
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<article class="home">
-  <p>
-    I am Herinson Rodrigues, a M.Sc. student in Computing at Fluminense Federal University (UFF). I'm also graduted in Computer Science at Federal University of Tocantins (UFT).
-  </p>
-  <p>
-    <br>
-    This is my academic website! For blog posts, follow me at Medium -- <a href="https://www.medium.com/@herodrigues" target="_blank">@herodrigues</a>.
-  </p>
-</article>
+	<title>Herinson Rodrigues</title>
+
+	<link rel="icon" href="favicon.ico" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/grey-white.css">
+
+	<!-- <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script> -->
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+</head>
+<body>
+	<noscript>
+		You need to enable JavaScript to run this app.
+	</noscript>
+	<main>
+		<div class="intro">Hello, I'm Herinson!</div>
+		<div class="tagline">Computer Scientist | Web Developer | Science Enthusiast </div>
+		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+		<div class="icons-social">
+			<a style="font-size: 48px; padding: 5px;" title="GitHub" target="_blank" href="https://github.com/herodrigues"><i class="fab fa-github"></i></a>
+			<a style="font-size: 48px; padding: 5px;" title="Stack Overflow" target="_blank" href="https://stackoverflow.com/story/herodrigues"><i class="fab fa-stack-overflow"></i></a>
+			<a style="font-size: 48px; padding: 5px;" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/herinson"><i class="fab fa-linkedin"></i></a>
+			<a style="font-size: 48px; padding: 5px;" title="Medium" target="_blank" href="https://medium.com/@herodrigues"><i class="fab fa-medium"></i></a>
+			<a style="font-size: 48px; padding: 5px;" title="Lattes" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4325996A4"><i class="fae fa-lattes"></i></a>
+		</div>
+	</main>
+
+	<script>
+		var faLattes = {
+		prefix: 'fae',
+		iconName: 'lattes',
+		icon: [
+			442, 442,
+			[],
+			null,
+			"M 198.5 0 A 198.5 198.5 0 0 0 0 198.5 A 198.5 198.5 0 0 0 198.5 397 A 198.5 198.5 0 0 0 397 198.5 A 198.5 198.5 0 0 0 198.5 0 z M 175.5957 52.724609 C 179.57913 52.734257 183.58806 52.900281 187.60938 53.183594 C 216.23237 55.201594 242.96931 64.041266 268.82031 75.947266 C 270.79931 76.858266 272.36309 78.669547 274.12109 80.060547 C 274.05909 80.689547 273.99855 81.319266 273.93555 81.947266 C 270.73355 82.346266 267.51103 83.207313 264.33203 83.070312 C 249.04503 82.410313 233.76014 80.729312 218.49414 80.945312 C 210.03914 81.065313 201.32881 83.342297 193.25781 86.154297 C 175.54381 92.322297 168.05619 106.35742 166.86719 124.23242 C 165.54019 144.18042 170.03766 163.30839 176.22266 182.02539 C 180.22666 194.13939 185.17733 205.94191 189.98633 218.62891 L 192.16016 226.05078 C 186.01916 225.19478 179.98084 224.41709 173.96484 223.49609 C 148.33684 219.57309 122.72403 215.55066 97.082031 211.72266 C 93.440031 211.17866 91.704203 209.77111 90.783203 206.03711 C 86.387203 188.21911 83.079719 170.28356 83.011719 151.85156 L 83.011719 146.79883 C 83.673719 142.26683 83.346156 137.64456 83.910156 133.10156 C 87.550156 103.78056 99.739375 79.466812 126.10938 64.382812 C 141.53469 55.559875 158.33417 52.682804 175.5957 52.724609 z M 214.55078 107.18555 C 238.37566 106.99394 264.05152 123.74777 272.04102 145.94727 C 279.42002 166.45027 265.71523 186.84923 243.36523 188.61523 C 241.53923 188.76023 239.70516 188.80433 238.53516 188.86133 C 214.09016 189.18133 186.16712 169.35381 181.70312 144.75781 C 178.47713 126.99181 189.22933 110.76278 207.23633 107.80078 C 209.6397 107.40553 212.08614 107.20537 214.55078 107.18555 z M 280.4668 113.57227 C 283.2628 114.68827 284.98795 114.89356 286.00195 115.85156 C 301.22495 130.22656 314.93972 145.72416 322.88672 165.53516 C 333.69972 192.48316 331.81348 218.82761 319.64648 244.84961 C 304.75348 276.70361 279.60589 298.34831 249.71289 315.19531 C 217.92589 333.10831 183.39222 343.13662 147.82422 350.14062 C 144.71622 350.75162 144.05984 349.20214 143.21484 347.11914 C 127.50384 308.46014 111.78127 269.80553 96.072266 231.14453 C 94.455266 227.16653 92.904719 223.15755 90.886719 218.06055 C 99.392719 219.98055 106.82217 221.55589 114.20117 223.33789 C 146.94617 231.24689 180.00725 233.62567 213.28125 227.76367 C 232.74925 224.33367 251.28478 217.88444 267.42578 205.89844 C 291.23678 188.21444 298.21255 163.66981 287.31055 136.13281 C 285.71855 132.11181 283.954 128.14511 282.625 124.03711 C 281.689 121.14311 281.3608 118.05627 280.4668 113.57227 z "
+		]
+		}
+
+		FontAwesome.library.add(faLattes)
+	</script>
+</body>
+</html>
