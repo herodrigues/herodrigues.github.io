@@ -23,8 +23,5 @@ img {
 a {
   text-decoration: initial;
   color: inherit;
-}
-
-a:visited {
-  color: transparent;
+  outline: 0;
 }
