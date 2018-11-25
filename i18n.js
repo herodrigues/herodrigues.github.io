@@ -112,5 +112,9 @@ function translatePage (a) {
     }
   })
   localStorage.setItem('locale', locale)
-  document.querySelector(`a[value=${locale}]`).focus()
+
+  document.querySelectorAll('div.locale > a').forEach(function (el) {
+    el.style.textDecoration = 'none'
+  })
+  document.querySelector(`a[value=${locale}]`).style.textDecoration = 'underline'
 }
