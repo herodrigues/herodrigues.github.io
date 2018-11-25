@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/grey-white.css">
 
-	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>	
 	
 	<script src="publications/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 	<bibtex src="publications/bibliography.bib"></bibtex>
@@ -293,11 +293,17 @@
 			</div>
 		</div>
 			
-		<div class="scroll-top">
+		<div class="scroll">
 			<a href="#">
-				<div class="arrow">
+				<div class="arrow-left">				
+					<button class="fas fa-angle-double-down fa-2x"></button>
+					<div class="to-top">Go down</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="arrow-right">
 					<button class="fas fa-angle-double-up fa-2x"></button>
-					<div class="to-top">To Top</div>
+					<div class="to-top">To top</div>
 				</div>
 			</a>
 		</div>
@@ -311,12 +317,6 @@
 	</div>
 
 	<script>
-		var handleBibClick = function (el) {
-			var id = el.getAttribute('aria-controls');
-			var target = document.getElementById(id);
-			target.classList.toggle('collapse');
-		}
-
 		var faLattes = {
 			prefix: 'fae',
 			iconName: 'lattes',
@@ -351,6 +351,38 @@
 		}
 
 		FontAwesome.library.add(faCpp, faLattes, faTex)		
+
+		var links = ["about", "portfolio", "education", "research"];
+		
+		var handleBibClick = function (el) {
+			var id = el.getAttribute('aria-controls');
+			var target = document.getElementById(id);
+			target.classList.toggle('collapse');
+		}
+		
+		document.querySelectorAll('.menu > a').forEach(function (e) {
+			var id = e.href.split('#')[1];
+
+			e.addEventListener('click', function(ev) {
+				links = links.slice(links.indexOf(id) + 1);
+			});
+		});
+
+		document.querySelector('a > .arrow-right').addEventListener('click', function(ev) {
+			ev.preventDefault();
+			links = ["about", "portfolio", "education", "research"];
+			document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
+
+		document.querySelector('a > .arrow-left').addEventListener('click', function(ev) {
+			ev.preventDefault();
+			var e = links.shift();
+			var target = document.getElementById(e);
+
+			if (target) {
+				target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+			}
+		});
 	</script>
 </body>
 </html>

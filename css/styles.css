@@ -252,8 +252,7 @@ nav .menu-item:hover {
 
 .education-item {
 	display: flex;
-
-flex-direction: column;
+	flex-direction: column;
     background-color: #FAFAFA;
 	color: #485564;
 	border-radius: 2px;
@@ -293,17 +292,42 @@ flex-direction: column;
     font-weight: 400;
 }
 
-.scroll-top {
+.scroll {
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
     position: fixed;
     bottom: 0;
-    right: 0;
-    cursor: pointer;
+	cursor: pointer;
+	width: 100%;
+	font-size: 0.75rem;
 }
 
-.scroll-top .arrow {
+.scroll .arrow-right {
+	flex: 0 0 auto;
     text-align: center;
-    margin: 0 auto;
+    right: 0;
     padding: .5rem 1rem;
+}
+
+/* .fa-angle-double-down {
+	animation: bounce 0.25s infinite alternate;
+} */
+
+.scroll .arrow-left {
+	flex: 0 0 auto;
+    text-align: center;
+	left: 0;
+	padding: .5rem 1rem;
+}
+
+@keyframes bounce {
+	from {
+	  transform: translateY(0px);
+	}
+	to {
+	  transform: translateY(-10px);
+	}
 }
 
 bibtex { 
