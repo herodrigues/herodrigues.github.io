@@ -44,36 +44,24 @@ var faUpwork = {
 
 FontAwesome.library.add(faCpp, faLattes, faTex, faUpwork)
 
-// var links = ["about", "portfolio", "education", "research"];
-
 var handleBibClick = function (el) {
-  var id = el.getAttribute('aria-controls');
-  var target = document.getElementById(id);
-  target.classList.toggle('collapse');
+  var id = el.getAttribute('aria-controls')
+  var target = document.getElementById(id)
+  target.classList.toggle('collapse')
 }
 
 document.querySelectorAll('.menu > a').forEach(function (e) {
-  e.addEventListener('click', function(ev) {
-    ev.preventDefault();
-    var id = e.href.split('#')[1];
-    var target = document.getElementById(id);
-    target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-    // links = links.slice(links.indexOf(id) + 1);
-  });
-});
+  e.addEventListener('click', function (ev) {
+    ev.preventDefault()
+    var id = e.href.split('#')[1]
+    var target = document.getElementById(id)
+    target.scrollIntoView({ behavior: 'smooth' })
+  })
+})
 
-document.querySelector('a > .arrow-right').addEventListener('click', function(ev) {
-  ev.preventDefault();
-  // links = ["about", "portfolio", "education", "research"];
-  document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth', block: 'center' });
-});
+document.querySelector('a > .scroll-top').addEventListener('click', function (ev) {
+  ev.preventDefault()
+  document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth' })
+})
 
-/* document.querySelector('a > .arrow-left').addEventListener('click', function(ev) {
-  ev.preventDefault();
-  var e = links.shift();
-  var target = document.getElementById(e);
-
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-  }
-}); */
+translatePage()

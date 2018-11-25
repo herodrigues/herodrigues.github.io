@@ -32,6 +32,21 @@ html {
 
 /* Custom Styles */
 
+div.locale {
+	padding: 4rem;
+}
+
+div.locale > a {
+	font-size: 1.25rem;
+  outline: 0;
+	padding: 0.125rem;
+}
+
+div.locale > a:hover,
+div.locale > a:focus {
+  text-decoration: underline;
+}
+
 .landing-page, .landing-page main {
     display: flex;
     justify-content: center;
@@ -295,18 +310,7 @@ nav .menu-item:hover {
 	right: 0;
 }
 
-.scroll .arrow-right {
-	flex: 0 0 auto;
-  text-align: center;
-  right: 0;
-  padding: .5rem 1rem;
-}
-
-/* .fa-angle-double-down {
-	animation: bounce 0.25s infinite alternate;
-} */
-
-.scroll .arrow-left {
+.scroll .scroll-top {
 	flex: 0 0 auto;
   text-align: center;
 	left: 0;

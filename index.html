@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/grey-white.css">
 
+	<script src="i18n.js" defer></script>
 	<script src="app.js" defer></script>
 	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
@@ -27,17 +28,20 @@
 	<div class="dev-landing-page">
 		<div class="landing-page">
 			<nav>
+				<div class="locale">
+					<a href="javascript:void(0)" onclick="translatePage(this)" value="en">en</a> &#124;
+					<a href="javascript:void(0)" onclick="translatePage(this)" value="pt">pt</a>
+				</div>
 				<div class="menu">
-					<a href="#about"><div class="menu-item">About</div></a>
-					<a href="#portfolio"><div class="menu-item">Portfolio</div></a>
-					<a href="#education"><div class="menu-item">Education</div></a>
-					<a href="#research"><div class="menu-item">Research</div></a>
+					<a href="#about"><div class="menu-item" data-i18n="__MSG_ABOUT__"></div></a>
+					<a href="#portfolio"><div class="menu-item" data-i18n="__MSG_PORTFOLIO__"></div></a>
+					<a href="#education"><div class="menu-item" data-i18n="__MSG_EDUCATION__"></div></a>
+					<a href="#research"><div class="menu-item" data-i18n="__MSG_RESEARCH__"></div></a>
 				</div>
 			</nav>
 			<main>
-				<div class="intro">Hello, I'm Herinson!</div>
-				<div class="tagline">Computer Scientist | Web Developer | Science Enthusiast </div>
-				<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+				<div class="intro" data-i18n="__MSG_HELLO__"></div>
+				<div class="tagline" data-i18n="__MSG_TAGLINE__"></div>
 				<div class="icons-social">
 					<a style="font-size: 48px;" title="GitHub" target="_blank" href="https://github.com/herodrigues"><i class="fab fa-github fa-fw"></i></a>
 					<a style="font-size: 48px;" title="Stack Overflow" target="_blank" href="https://stackoverflow.com/story/herodrigues"><i class="fab fa-stack-overflow  fa-fw"></i></a>
@@ -51,30 +55,10 @@
 
 		<div class="about-page" id="about">
 			<div class="content-grid">
-				<h1>About</h1>
+				<h1 data-i18n="__MSG_ABOUT__"></h1>
 				<div class="about-wrapper">
-					<div class="about-content">
-						<p>
-							Hi! I'm a developer from Brazil.
-							I've been in the tech world since I was 15 years old!
-						</p>
-						<p>
-							From this time, I got an Associate Degree in Informatics and a
-							Bachelor Degree in Computer Science.
-						</p>
-						<p>
-							I worked using PHP, Symfony and Zend during short-term internships.
-						</p>
-						<p>
-							During my bachelor degree, I was involved with C/C++ in programming contests
-							such as the ACM International Collegiate Programming Contest.
-						</p>
-						<p>
-							Currenty, my work focus is mainly building web browser extensions using JavaScript and React.js.
-						</p>
-						<p>
-							In my spare time, I love to help the open-source community in a variety of projects.
-						</p>
+					<div class="about-content" data-i18n="__MSG_ABOUT_DESC__">
+
 					</div>
 				</div>
 			</div>
@@ -82,37 +66,37 @@
 
 		<div class="portfolio-page" id="portfolio">
 			<div class="content-grid">
-				<h1>Portfolio</h1>
+				<h1 data-i18n="__MSG_PORTFOLIO__"></h1>
 				<div class="portfolio-wrapper">
 					<div class="portfolio-item">
 						<div class="portfolio-item__title">Guru</div>
-						<div class="portfolio-item__desc">Browser extension that automatically applies coupons code at online stores' checkout page</div>
+						<div class="portfolio-item__desc" data-i18n="__MSG_PORTFOLIO_ITEM1__"></div>
 						<div class="portfolio-item__icon">
 							<i class="fab fa-js" title="JavaScript"></i>
 							<i class="fab fa-react" title="ReactJS"></i>
 							<i class="fab fa-chrome" title="Google Chrome"></i>
 						</div>
 						<div class="portfolio-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues">Blog</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://goguru.io">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues"  data-i18n="__MSG_BLOG__"></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://goguru.io" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 					<div class="portfolio-item">
 						<div class="portfolio-item__title">RoboCup 2D Tutorial</div>
-						<div class="portfolio-item__desc">Series of tutorials for the RoboCup 2D Soccer Simulation</div>
+						<div class="portfolio-item__desc" data-i18n="__MSG_PORTFOLIO_ITEM2__"></div>
 						<div class="portfolio-item__icon">
 							<i class="fab fa-markdown" title="Markdown"></i>
 							<i class="fab fa-linux" title="Linux"></i>
 							<i class="fas fa-file-alt" title="Documentation"></i>
 						</div>
 						<div class="portfolio-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues/setting-up-an-environment-for-the-robocup-soccer-server-simulator-rcssserver-b3f118b416aa">Blog</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://github.com/herodrigues/robocup2d-tutorial">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues/setting-up-an-environment-for-the-robocup-soccer-server-simulator-rcssserver-b3f118b416aa" data-i18n="__MSG_BLOG__"></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/herodrigues/robocup2d-tutorial" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 					<div class="portfolio-item">
 						<div class="portfolio-item__title">StarCraft Bot Template</div>
-						<div class="portfolio-item__desc">StarCraft II API template bot using SC2 Client API</div>
+						<div class="portfolio-item__desc" data-i18n="__MSG_PORTFOLIO_ITEM3__"></div>
 						<div class="portfolio-item__icon">
 							<i class="fae fa-cpp" title="C++"></i>
 							<i class="fab fa-windows" title="Windows"></i>
@@ -120,19 +104,19 @@
 							<i class="fab fa-apple" title="MacOS"></i>
 						</div>
 						<div class="portfolio-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues">Blog</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://github.com/herodrigues/sc2_bot">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@herodrigues" data-i18n="__MSG_BLOG__"></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/herodrigues/sc2_bot" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 					<div class="portfolio-item">
 						<div class="portfolio-item__title">MaratonaTO</div>
-						<div class="portfolio-item__desc">Brazil's Tocantins regional programming contest website</div>
+						<div class="portfolio-item__desc" data-i18n="__MSG_PORTFOLIO_ITEM4__"></div>
 						<div class="portfolio-item__icon">
 							<i class="fab fa-html5" title="HTML5"></i>
 							<i class="fab fa-css3" title="CSS3"></i>
 						</div>
 						<div class="portfolio-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="https://maratonato.github.io/">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://maratonato.github.io/" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 				</div>
@@ -141,7 +125,7 @@
 
 		<div class="education-page" id="education">
 			<div class="content-grid">
-				<h1>Education</h1>
+				<h1 data-i18n="__MSG_EDUCATION__"></h1>
 				<div class="education-wrapper">
 					<!-- B.Sc. in Teaching Mathematics
 					<div class="education-item">
@@ -172,17 +156,19 @@
 
 					<!-- Bachelor in Computer Science -->
 					<div class="education-item">
-						<div class="education-item__title">Bachelor in Computer Science &mdash; 2010-2016</div>
+						<div class="education-item__title" data-i18n="__MSG_EDUCATION_ITEM1__"></div>
 						<div class="education-item__desc">
 							<p>
-								Institution: Federal University of Tocantins (UFT)
-								&nbsp;<a href="http://ww2.uft.edu.br/" target="_blank" rel="noopener noreferrer">
-									<i class="fas fa-external-link-alt" title="Open the institution website"></i>
+								<span data-i18n="__MSG_INSTITUTION__"></span>: Universidade Federal do Tocantins (UFT)
+								<a href="http://ww2.uft.edu.br/" target="_blank" rel="noopener noreferrer">
+									<i class="fas fa-external-link-alt fa-fw" title="Open the institution website"></i>
 								</a>
 							</p>
-							<p>Thesis title: "O Algoritmo de Ponto Proximal para Otimização de Funções Convexas de uma Variável Real a Valores Reais"</p>
 							<p>
-								Adviser: Rogério Azevedo Rocha
+								<span data-i18n="__MSG_THESIS_TITLE__"></span>: O Algoritmo de Ponto Proximal para Otimização de Funções Convexas de uma Variável Real a Valores Reais
+							</p>
+							<p>
+								<span data-i18n="__MSG_ADVISER__"></span>: Rogério Azevedo Rocha
 								<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4794706T5" target="_blank" rel="noopener noreferrer">
 									<i class="fab fa-lattes fa-fw" title="Link to his Lattes profile"></i>
 								</a>
@@ -193,22 +179,26 @@
 							<i class="fas fa-laptop-code" title="Computer Science"></i>
 						</div>
 						<div class="education-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="publications/undergraduate-thesis.pdf" title="Open the thesis PDF file">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="publications/undergraduate-thesis.pdf" title="Open the thesis PDF file" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 
 					<!-- Student Exchange Program -->
 					<div class="education-item">
-						<div class="education-item__title">Student Exchange Program &mdash; 2013-2014</div>
+						<div class="education-item__title" data-i18n="__MSG_EDUCATION_ITEM2__"></div>
 						<div class="education-item__desc">
 							<p>
-								Institution: Macquarie University
-								&nbsp;<a href="http://www.mq.edu.au/" target="_blank" rel="noopener noreferrer">
-									<i class="fas fa-external-link-alt" title="Open the institution website"></i>
+								<span data-i18n="__MSG_INSTITUTION__"></span>: Macquarie University
+								<a href="http://www.mq.edu.au/" target="_blank" rel="noopener noreferrer">
+									<i class="fas fa-external-link-alt fa-fw" title="Open the institution website"></i>
 								</a>
 							</p>
-							<p>Program: Science without Borders - CAPES<p>
-							<p>Objective: Academic English course and one year of Bachelor in Information Technology<p>
+							<p>
+								<span data-i18n="__MSG_PROGRAM__"></span>: <span data-i18n="__MSG_CSF__"></span>
+							<p>
+							<p>
+								<span data-i18n="__MSG_BRIEF__"></span>: <span data-i18n="__MSG_EDUCATION_ITEM3_BRIEF__"></span>
+							<p>
 						</div>
 						<div class="education-item__icon">
 							<i class="fas fa-exchange-alt" title="Exchange Program"></i>
@@ -216,22 +206,22 @@
 							<i class="fas fa-laptop" title="Information Technology"></i>
 						</div>
 						<div class="education-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="https://www.mq.edu.au/study/international-students/staging/details/brazil-cnpqscience-without-borders" title="Open the thesis PDF file">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.mq.edu.au/study/international-students/staging/details/brazil-cnpqscience-without-borders" title="Open the thesis PDF file" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 
 					<!-- Associate degree in Informatics -->
 					<div class="education-item">
-						<div class="education-item__title">Associate degree in Informatics &mdash; 2006-2009</div>
+						<div class="education-item__title" data-i18n="__MSG_EDUCATION_ITEM3__"></div>
 						<div class="education-item__desc">
 							<p>
-								Institution: Federal Institute of Piaui (IFPI)
-								&nbsp;<a href="http://libra.ifpi.edu.br/floriano" target="_blank" rel="noopener noreferrer">
-									<i class="fas fa-external-link-alt" title="Open the institution website"></i>
+								<span data-i18n="__MSG_INSTITUTION__"></span>: Instituto Federal do Piauí (IFPI)
+								<a href="http://libra.ifpi.edu.br/floriano" target="_blank" rel="noopener noreferrer">
+									<i class="fas fa-external-link-alt fa-fw" title="Open the institution website"></i>
 								</a>
 							</p>
 							<p>
-								Brief: Associate Degree in Informatics during High School
+								<span data-i18n="__MSG_BRIEF__"></span>: <span data-i18n="__MSG_EDUCATION_ITEM3_BRIEF__"></span>
 							</p>
 						</div>
 						<div class="education-item__icon">
@@ -239,7 +229,7 @@
 							<i class="fas fa-keyboard" title="Informatics"></i>
 						</div>
 						<div class="education-item__links">
-							<a target="_blank" rel="noopener noreferrer" href="http://libra.ifpi.edu.br/cursos/tecnicos/concomitante" title="Open the thesis PDF file">More</a>
+							<a target="_blank" rel="noopener noreferrer" href="http://libra.ifpi.edu.br/cursos/tecnicos/concomitante" title="Open the thesis PDF file" data-i18n="__MSG_MORE__"></a>
 						</div>
 					</div>
 				</div>
@@ -248,7 +238,7 @@
 
 		<div class="research-page" id="research">
 			<div class="content-grid">
-				<h1>Research</h1>
+				<h1 data-i18n="__MSG_RESEARCH__"></h1>
 				<div class="bibtex_structure">
 						<div class="group year" extra="DESC number">
 						<div style="padding-bottom:10px;"></div>
@@ -297,16 +287,10 @@
 		</div>
 
 		<div class="scroll">
-			<!--<a href="#">
-				<div class="arrow-left">
-					<button class="fas fa-angle-double-down fa-2x"></button>
-					<div class="to-top">Go down</div>
-				</div>
-			</a>-->
-			<a href="#">
-				<div class="arrow-right">
+			<a href="javascript:void(0)">
+				<div class="scroll-top">
 					<button class="fas fa-angle-double-up fa-2x"></button>
-					<div class="to-top">To top</div>
+					<div class="to-top" data-i18n="__MSG_HOME__"></div>
 				</div>
 			</a>
 		</div>
