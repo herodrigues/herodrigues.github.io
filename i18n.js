@@ -8,7 +8,7 @@ var i18n = {
     __MSG_TAGLINE__: "Computer Scientist | Web Developer | Science Enthusiast",
     __MSG_ABOUT_DESC__: `
         <p>
-          Hi! I'm a developer from Brazil.
+          Hi! I'm Herinson!
           I've been in the tech world since I was 15 years old!
         </p>
         <p>
@@ -16,10 +16,7 @@ var i18n = {
           Bachelor Degree in Computer Science.
         </p>
         <p>
-          I worked using PHP, Symfony and Zend during short-term internships.
-        </p>
-        <p>
-          During my bachelor degree, I was involved with C/C++ in programming contests
+          During my bachelor degree, I was involved in programming contests
           such as the ACM International Collegiate Programming Contest.
         </p>
         <p>
@@ -57,26 +54,21 @@ var i18n = {
     __MSG_TAGLINE__: "Cientista da Computação | Desenvolvedor Web | Brasileiro",
     __MSG_ABOUT_DESC__: `
         <p>
-          Olá! Eu sou um programador brasileiro.
-          Estou no "mundo da informática" desde os 15 anos de idade!
+          Olá! Meu nome é Herinson. Estou no "mundo da informática" desde os 15 anos de idade!
         </p>
         <p>
           Durante este tempo, eu fiz um Técnico em Informática e um
           Bacharelado em Ciência da Computação.
         </p>
         <p>
-          Eu já trabalhei com PHP, Symfony e Zend durante vários estágios de curta duração.
-        </p>
-        <p>
-          Na minha graduação, eu estive envolvido com maratonas de programação participando
-          assim como sendo técnico de equipes em competições promovidas pela
-          ACM International Collegiate (ACM - ICPC).
+          Estive envolvido com maratonas de programação de competições
+          promovidas pela ACM International Collegiate (ACM - ICPC).
         </p>
         <p>
           Atualmente, eu trabalho desenvolvendo extensões para navegadores utilizando JavaScript e ReactJS.
         </p>
         <p>
-          No meu tempo livre, eu gosto de contribuit com projetos open-source dos mais diversos tipos.
+          No meu tempo livre, eu contribuo com projetos open-source dos mais diversos tipos.
         </p>
     `,
     __MSG_MORE__: "Saiba Mais",

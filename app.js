@@ -59,7 +59,7 @@ document.querySelectorAll('.menu > a').forEach(function (e) {
   })
 })
 
-document.querySelector('a > .scroll-top').addEventListener('click', function (ev) {
+document.querySelector('.scroll-top').addEventListener('click', function (ev) {
   ev.preventDefault()
   document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth' })
 })

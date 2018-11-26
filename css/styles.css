@@ -33,13 +33,14 @@ html {
 /* Custom Styles */
 
 div.locale {
-	padding: 2rem;
+	padding: 1rem;
+	float: right;
+	font-size: 1.25rem;
 }
 
 div.locale > a {
-	font-size: 1.25rem;
   outline: 0;
-	padding: 0.125rem;
+	padding: 0.15rem;
 }
 
 div.locale > a:hover,
@@ -67,9 +68,6 @@ div.locale > a:focus {
 @media (min-width: 426px) {
 	.content-grid {
 		width: calc(100% - 5rem);
-	}
-	.portfolio-item {
-		width: calc(100% - 1rem);
 	}
 }
 
@@ -300,21 +298,22 @@ nav .menu-item:hover {
 }
 
 .scroll {
-	display:flex;
-	flex-direction:row;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
   position: fixed;
   bottom: 0;
 	cursor: pointer;
-	font-size: 0.75rem;
 	right: 0;
+	width: 100%;
 }
 
-.scroll .scroll-top {
+.scroll-top {
 	flex: 0 0 auto;
   text-align: center;
 	left: 0;
 	padding: .5rem 1rem;
+	font-size: 0.75rem;
 }
 
 @keyframes bounce {
