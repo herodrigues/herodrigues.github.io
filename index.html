@@ -12,9 +12,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 	<link rel="stylesheet" href="style.min.css">
 
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/solid.js" integrity="sha384-Xgf/DMe1667bioB9X1UM5QX+EG6FolMT4K7G+6rqNZBSONbmPh/qZ62nBPfTx+xG" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/brands.js" integrity="sha384-S2C955KPLo8/zc2J7kJTG38hvFV+SnzXM6hwfEUhGHw5wPo6uXbnbjSJgw3clO4G" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/solid.js" integrity="sha384-Xgf/DMe1667bioB9X1UM5QX+EG6FolMT4K7G+6rqNZBSONbmPh/qZ62nBPfTx+xG" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/brands.js" integrity="sha384-S2C955KPLo8/zc2J7kJTG38hvFV+SnzXM6hwfEUhGHw5wPo6uXbnbjSJgw3clO4G" crossorigin="anonymous"></script>
+
+	<script defer src="i18n.js"></script>
+	<script defer src="app.js"></script>
+	<script defer src="publications/bibtex_js.min.js" type="text/javascript" charset="utf-8"></script>
+	<bibtex src="publications/bibliography.bib"></bibtex>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68009625-1"></script>
@@ -46,8 +51,8 @@
 					<a style="font-size: 48px;" title="GitHub" target="_blank" href="https://github.com/herodrigues"><i class="fab fa-github fa-fw"></i></a>
 					<a style="font-size: 48px;" title="Stack Overflow" target="_blank" href="https://stackoverflow.com/story/herodrigues"><i class="fab fa-stack-overflow  fa-fw"></i></a>
 					<a style="font-size: 48px;" title="Medium" target="_blank" href="https://medium.com/@herodrigues"><i class="fab fa-medium fa-fw"></i></a>
-					<a style="font-size: 48px;" title="Lattes" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4325996A4"><i class="fab fa-lattes fa-fw"></i></a>
-					<a style="font-size: 48px;" title="Upwork" target="_blank" href="https://www.upwork.com/o/profiles/users/_~0198e6ab09ec56dbda/"><i class="fab fa-upwork fa-fw"></i></a>
+					<a style="font-size: 48px;" title="Lattes" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4325996A4"><i class="fac fa-lattes fa-fw"></i></a>
+					<a style="font-size: 48px;" title="Upwork" target="_blank" href="https://www.upwork.com/o/profiles/users/_~0198e6ab09ec56dbda/"><i class="fac fa-upwork fa-fw"></i></a>
 					<a style="font-size: 48px;" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/herinson"><i class="fab fa-linkedin fa-fw"></i></a>
 				</div>
 			</main>
@@ -141,7 +146,7 @@
 							<p>
 								Adviser: TBD
 								&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">
-									<i class="fae fa-lattes" title="Link to his Lattes profile"></i>
+									<i class="fac fa-lattes" title="Link to his Lattes profile"></i>
 								</a>
 							<p>
 						</div>
@@ -170,7 +175,7 @@
 							<p>
 								<span data-i18n="__MSG_ADVISER__"></span>: Rogério Azevedo Rocha
 								<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4794706T5" target="_blank" rel="noopener noreferrer">
-									<i class="fab fa-lattes fa-fw" title="Link to his Lattes profile"></i>
+									<i class="fac fa-lattes fa-fw" title="Link to his Lattes profile"></i>
 								</a>
 							<p>
 						</div>
@@ -269,7 +274,7 @@
 									<span class="if year"><span class="year"></span>.</span>
 									<span class="if note"><span class="note"></span></span>
 									<a onclick="handleBibClick(this)" class="bibtexVar" role="button" data-toggle="collapse" href="javascript:undefined" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-										<i class="fab fa-tex fa-fw" title="Open BibTeX format"></i>
+										<i class="fac fa-tex fa-fw" title="Open BibTeX format"></i>
 									</a>
 								</div>
 								<div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
@@ -298,15 +303,10 @@
 
 		<footer>
 			<div class="content-grid">
-				<div> Thanks to <a href="https://github.com/flexdinesh" target="_blank" rel="noopener noreferrer" style="color: rgb(61, 192, 176);">Dinesh</a> for this awesome theme <span role="img" aria-label="heart">❤️</span>
+				<div> Thanks to <a href="https://github.com/flexdinesh" target="_blank" rel="noopener noreferrer" style="color: rgb(61, 192, 176);">Dinesh</a> for this awesome theme <span role="img" style="color: red;" aria-label="heart">❤️</span>
 				</div>
 			</div>
 		</footer>
 	</div>
-
-	<script defer src="app.js"></script>
-	<script src="i18n.js"></script>
-	<script src="publications/bibtex_js.min.js" type="text/javascript" charset="utf-8"></script>
-	<bibtex src="publications/bibliography.bib"></bibtex>
 </body>
 </html>

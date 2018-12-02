@@ -110,3 +110,5 @@ function translatePage (a) {
   })
   document.querySelector(`a[value=${locale}]`).style.textDecoration = 'underline'
 }
+
+translatePage()

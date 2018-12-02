@@ -1,5 +1,5 @@
 var faLattes = {
-  prefix: 'fab',
+  prefix: 'fac',
   iconName: 'lattes',
   icon: [
     412, 412,
@@ -10,7 +10,7 @@ var faLattes = {
 }
 
 var faCpp = {
-  prefix: 'fab',
+  prefix: 'fac',
   iconName: 'cpp',
   icon: [
     492, 492,
@@ -21,7 +21,7 @@ var faCpp = {
 }
 
 var faTex = {
-  prefix: 'fab',
+  prefix: 'fac',
   iconName: 'tex',
   icon: [
     492, 492,
@@ -32,7 +32,7 @@ var faTex = {
 }
 
 var faUpwork = {
-  prefix: 'fab',
+  prefix: 'fac',
   iconName: 'upwork',
   icon: [
     412, 412,
@@ -63,5 +63,3 @@ document.querySelector('.scroll-top').addEventListener('click', function (ev) {
   ev.preventDefault()
   document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth' })
 })
-
-translatePage()
