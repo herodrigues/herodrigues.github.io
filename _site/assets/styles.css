@@ -29,7 +29,7 @@ div.locale > a:hover, div.locale > a:focus { text-decoration: underline; }
 
 .landing-page { min-height: 100vh; flex: 0 1 auto; flex-direction: column; }
 
-.content-grid { margin: 0 auto; width: calc(100% - 5rem); flex: auto; }
+.content-grid { margin: 0 auto; width: calc(100% - 1rem); flex: auto; }
 
 @media (min-width: 426px) { .content-grid { width: calc(100% - 5rem); } }
 @media (min-width: 769px) { .content-grid { width: calc(100% - 10rem); } }
