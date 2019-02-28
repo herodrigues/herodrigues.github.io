@@ -49,17 +49,3 @@ var handleBibClick = function (el) {
   var target = document.getElementById(id)
   target.classList.toggle('collapse')
 }
-
-document.querySelectorAll('.menu > a').forEach(function (e) {
-  e.addEventListener('click', function (ev) {
-    ev.preventDefault()
-    var id = e.href.split('#')[1]
-    var target = document.getElementById(id)
-    target.scrollIntoView({ behavior: 'smooth' })
-  })
-})
-
-document.querySelector('.scroll-top').addEventListener('click', function (ev) {
-  ev.preventDefault()
-  document.querySelector('.landing-page').scrollIntoView({ behavior: 'smooth' })
-})
