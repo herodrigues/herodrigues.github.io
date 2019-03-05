@@ -59,7 +59,7 @@ var i18n = {
     __MSG_MYPROJECTS__: "Meus Projetos",
     __MSG_MYPROJECTS_HEADLINE__: "Projetos com repositórios no GitHub.",
     __MSG_MYINTERESTS__: "Meus Interesses",
-    __MSG_MYINTERESTS_HEADLINE__: "Tópicos que tenho de interesse em aperfeiçoar.",
+    __MSG_MYINTERESTS_HEADLINE__: "Tópicos que tenho interesse em aperfeiçoar.",
     __MSG_ABOUT_DESC__: `
         <p>
           Olá! Meu nome é Herinson. Estou no "mundo da informática" desde os 15 anos de idade!
