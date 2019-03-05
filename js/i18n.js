@@ -6,6 +6,10 @@ var i18n = {
     __MSG_RESEARCH__: "Research",
     __MSG_HELLO__: "Hello, I'm Herinson!",
     __MSG_TAGLINE__: "Computer Scientist | Web Developer | Science Enthusiast",
+    __MSG_MYPROJECTS__: "My Projects",
+    __MSG_MYPROJECTS_HEADLINE__: "GitHub repositories that I've built.",
+    __MSG_MYINTERESTS__: "My Interests",
+    __MSG_MYINTERESTS_HEADLINE__: "Topics that I want to learn more about.",
     __MSG_ABOUT_DESC__: `
         <p>
           Hi! I'm Herinson!
@@ -52,6 +56,10 @@ var i18n = {
     __MSG_RESEARCH__: "Pesquisa",
     __MSG_HELLO__: "Olá! Eu sou o Herinson!",
     __MSG_TAGLINE__: "Cientista da Computação | Desenvolvedor Web | Brasileiro",
+    __MSG_MYPROJECTS__: "Meus Projetos",
+    __MSG_MYPROJECTS_HEADLINE__: "Projetos com repositórios no GitHub.",
+    __MSG_MYINTERESTS__: "Meus Interesses",
+    __MSG_MYINTERESTS_HEADLINE__: "Tópicos que tenho de interesse em aperfeiçoar.",
     __MSG_ABOUT_DESC__: `
         <p>
           Olá! Meu nome é Herinson. Estou no "mundo da informática" desde os 15 anos de idade!
