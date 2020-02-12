@@ -1,0 +1,73 @@
+{
+  "name": "Herinson Rodrigues",
+  "occupation": "Computer Scientist/Web Developer",
+  "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+  "profileImage": "https://avatars0.githubusercontent.com/u/1832537?s=400&u=c69ef62989e0b629883417f6bdbb842fa7efb307&v=4",
+  "backgroundImage": "https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+  "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+  "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+  "email": "herodrigues@protonmail.com",
+  "phone": "555-555-5555",
+  "address": {
+    "country": "Brazil",
+    "city": "Palmas",
+    "state": "Tocantins"
+  },
+  "website": "http://www.herodrigues.me",
+  "resumedownload": "http://www.herodrigues.me",
+  "social": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/herinson/",
+      "className": "fa fa-linkedin"
+    },
+    {
+      "name": "upwork",
+      "url": "https://www.upwork.com/o/profiles/users/_~0198e6ab09ec56dbda/",
+      "className": "fa fa-upwork"
+    },
+    {
+      "name": "github",
+      "url": "http://github.com/herodrigues",
+      "className": "fa fa-github"
+    },
+    {
+      "name": "skype",
+      "url": "http://skype.com",
+      "className": "fa fa-skype"
+    }
+  ],
+  "education": [
+    {
+      "school": "Instituto Federal do Tocantins (IFTO)",
+      "degree": "B.Sc. in Physics with Education",
+      "graduated": "November 2023 (expected)",
+      "link": "http://www.ifto.edu.br/",
+      "adviser": "",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    },
+    {
+      "school": "Universidade Federal do Tocantins (UFT)",
+      "degree": "Bachelor in Computer Science",
+      "graduated": "December 2016",
+      "link": "ww2.uft.edu.br",
+      "adviser": "Rogério Azevedo Rocha",
+      "thesis": "O Algoritmo de Ponto Proximal para Otimização de Funções Convexas de uma Variável Real a Valores Reais",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    },
+    {
+      "school": "Macquarie University",
+      "degree": "Student Exchange Program - Bachelor in Information Technology",
+      "graduated": "December 2014",
+      "link": "www.mq.edu.au",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    },
+    {
+      "school": "Instituto Federal do Piauí (IFPI)",
+      "degree": "Associate Degree in Informatics",
+      "link": "libra.ifpi.edu.br/floriano",
+      "graduated": "November 2009",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    }
+  ]
+}
