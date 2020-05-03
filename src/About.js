@@ -1,6 +1,12 @@
 import React from "react";
 
-const About = props => (
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faDownload);
+
+const About = (props) => (
   <section id="about">
     <div className="row">
       <div className="three columns">
@@ -17,8 +23,9 @@ const About = props => (
         <div className="row">
           <div className="columns download">
             <p>
-              <a href={props.resumeDownload} className="button">
-                <i className="fa fa-download"></i>Download Resume
+              <a href={props.resumeDownload} className="button" target="_blank">
+                <FontAwesomeIcon icon={faDownload} />
+                &nbsp; Download Resume
               </a>
             </p>
           </div>

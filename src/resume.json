@@ -14,38 +14,25 @@
     "state": "Tocantins"
   },
   "website": "http://www.herodrigues.me",
-  "resumedownload": "http://www.herodrigues.me",
+  "resumeDownload": "/pdf/HerinsonCV.pdf",
   "social": [
     {
-      "name": "linkedin",
-      "url": "https://www.linkedin.com/in/herinson/",
-      "className": "fa fa-linkedin"
+      "name": "github",
+      "url": "http://github.com/herodrigues",
+      "icon": "github"
     },
     {
       "name": "upwork",
       "url": "https://www.upwork.com/o/profiles/users/_~0198e6ab09ec56dbda/",
-      "className": "fa fa-upwork"
+      "icon": "upwork"
     },
     {
-      "name": "github",
-      "url": "http://github.com/herodrigues",
-      "className": "fa fa-github"
-    },
-    {
-      "name": "skype",
-      "url": "http://skype.com",
-      "className": "fa fa-skype"
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/herinson/",
+      "icon": "linkedin"
     }
   ],
   "education": [
-    {
-      "school": "Instituto Federal do Tocantins (IFTO)",
-      "degree": "B.Sc. in Physics with Education",
-      "graduated": "November 2023 (expected)",
-      "link": "http://www.ifto.edu.br/",
-      "adviser": "",
-      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-    },
     {
       "school": "Universidade Federal do Tocantins (UFT)",
       "degree": "Bachelor in Computer Science",

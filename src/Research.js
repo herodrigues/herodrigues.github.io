@@ -1,13 +1,13 @@
 import React from "react";
 
-const handleBibClick = function(el) {
+const handleBibClick = function (el) {
   var id = el.getAttribute("aria-controls");
   var target = document.getElementById(id);
   target.classList.toggle("collapse");
 };
 
-const Research = props => (
-  <section id="research">
+const Research = (props) => (
+  <section className="resume">
     <div className="row education">
       <div className="three columns header-col">
         <h1>
@@ -35,7 +35,7 @@ const Research = props => (
                       <span className="if title">
                         <a
                           className="bibtexVar"
-                          href="publications/+BIBTEXKEY+.pdf"
+                          href="pdf/+BIBTEXKEY+.pdf"
                           extra="BIBTEXKEY"
                           target="_blank"
                           rel="noopener noreferrer"

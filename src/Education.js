@@ -1,7 +1,7 @@
 import React from "react";
 
-const Education = props => (
-  <section id="resume">
+const Education = (props) => (
+  <section className="resume">
     <div className="row education">
       <div className="three columns header-col">
         <h1>
@@ -12,7 +12,7 @@ const Education = props => (
       <div className="nine columns main-col">
         <div className="row item">
           <div className="twelve columns">
-            {props.education.map(education => (
+            {props.education.map((education) => (
               <div key={education.school}>
                 <h3>{education.school}</h3>
                 <p className="info">
