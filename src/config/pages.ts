@@ -1,6 +1,11 @@
 import type { PagesConfig } from "../types";
 
 export const PAGES: PagesConfig = {
+    home: {
+        title: "About",
+        subtitle: "",
+        isActive: true,
+    },
     blog: {
         title: "Blog",
         subtitle: "Notes on software engineering, algorithms, and whatever else I'm thinking about.",

@@ -7,7 +7,7 @@ export const SITE: SiteConfig = {
     title: "Herinson Rodrigues",
     ogImage: "avatar.png",
     postPerPage: 5,
-    favicon: "/favicon.svg",
+    favicon: "/favicon.png",
     lang: "en",
 };
 

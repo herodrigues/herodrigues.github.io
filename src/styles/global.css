@@ -31,8 +31,23 @@ html.dark {
 }
 
 html {
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Ubuntu, Cantarell, Arial, sans-serif;
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    /* Shared horizontal padding so navbar, content and footer line up */
+    --gutter: 2rem;
+}
+
+@media (max-width: 1024px) {
+    html {
+        --gutter: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        --gutter: 1rem;
+    }
 }
 
 body {
@@ -99,7 +114,7 @@ p,
 /* Mono (code, tags) */
 code,
 .mono {
-    font-family: "JetBrains Mono", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace;
     font-size: 0.85rem;
     font-weight: 500;
     line-height: 1.5;
@@ -154,75 +169,6 @@ a:hover,
 
 .container-full {
     max-width: none;
-}
-
-/* Spacing scale */
-.space-y-1 {
-    margin-bottom: 0.5rem;
-}
-
-.space-y-2 {
-    margin-bottom: 1rem;
-}
-
-.space-y-3 {
-    margin-bottom: 1.5rem;
-}
-
-.space-y-4 {
-    margin-bottom: 2rem;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
-.mt-8 {
-    margin-top: 2rem;
-}
-
-.mb-2 {
-    margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-    margin-bottom: 1rem;
-}
-
-.mb-8 {
-    margin-bottom: 2rem;
-}
-
-.pt-4 {
-    padding-top: 1rem;
-}
-
-.pt-8 {
-    padding-top: 2rem;
-}
-
-.pb-4 {
-    padding-bottom: 1rem;
-}
-
-.pb-8 {
-    padding-bottom: 2rem;
-}
-
-.gap-1 {
-    gap: 0.5rem;
-}
-
-.gap-2 {
-    gap: 1rem;
-}
-
-.gap-3 {
-    gap: 1.5rem;
-}
-
-.gap-4 {
-    gap: 2rem;
 }
 
 
@@ -393,7 +339,8 @@ a:hover,
 .social-link:hover {
     opacity: 1;
     color: var(--accent);
-    transform: rotate(6deg);
+    /* The lift keeps the motion visible on circular icons (ORCID, Lattes), where rotation alone doesn't show. */
+    transform: translateY(-2px) rotate(6deg);
 }
 
 .social-link svg {
@@ -418,7 +365,7 @@ a:hover,
     height: 100vh;
     position: sticky;
     top: 0;
-    padding: 4rem 1.5rem 1.5rem;
+    padding: 2.5rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -468,7 +415,7 @@ a:hover,
 
 /* Navbar */
 .navbar {
-    padding: 1rem 1.5rem;
+    padding: 1rem var(--gutter);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -476,11 +423,13 @@ a:hover,
     transition: background 0.3s ease;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .navbar {
         position: sticky;
         top: 0;
         z-index: 10;
+        /* Line the nav up with the top of the sidebar avatar */
+        padding-top: 2.5rem;
     }
 }
 
@@ -490,10 +439,16 @@ a:hover,
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .nav-link {
+    display: inline-block;
+    padding: 0.25rem 0;
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
@@ -512,7 +467,7 @@ a:hover,
 
 .nav-link-line {
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -0.25rem;
     left: 0;
     width: 0;
     height: 4px;
@@ -536,7 +491,7 @@ a:hover,
 }
 
 .main-body {
-    padding: 1.5rem 2rem 2rem;
+    padding: 1.5rem var(--gutter) 2rem;
     flex: 1;
 }
 
@@ -547,10 +502,12 @@ a:hover,
 
 /* Footer */
 .footer {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem var(--gutter);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 0.75rem 1rem;
     font-size: 0.85rem;
     color: var(--foreground);
 }
@@ -602,6 +559,20 @@ a:hover,
     font-size: 1rem;
     line-height: 1.7;
     color: var(--foreground);
+    overflow-wrap: break-word;
+}
+
+/* Wide content scrolls on its own instead of widening the page */
+.prose table,
+.prose .katex-display {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.prose iframe,
+.prose video {
+    max-width: 100%;
 }
 
 .prose h1 {
@@ -662,7 +633,7 @@ a:hover,
 }
 
 .prose code {
-    font-family: "JetBrains Mono", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace;
     font-size: 0.85em;
     font-weight: 500;
     background: var(--surface);
@@ -902,7 +873,7 @@ a:hover,
         height: auto;
         position: relative;
         border-right: none;
-        padding: 1rem;
+        padding: 1.5rem var(--gutter) 0.5rem;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0.75rem;
@@ -913,44 +884,76 @@ a:hover,
         height: 112px;
     }
 
-    .main-body {
-        padding: 1rem 1.5rem;
+    .sidebar-bio {
+        padding: 0;
     }
 
     .main-content {
         width: 100%;
-        flex: none;
+    }
+
+    /* Stuck to the top while scrolling; scrolls sideways if links overflow */
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main-body {
+        padding-top: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .sidebar {
-        padding: 0.75rem 1rem;
-        gap: 0.5rem;
+        padding-top: 1.25rem;
     }
 
     .sidebar-avatar {
-        width: 80px;
-        height: 80px;
+        width: 72px;
+        height: 72px;
     }
 
     .sidebar-name {
         font-size: 1.25rem;
     }
 
+    .sidebar-info {
+        font-size: 0.8rem;
+    }
+
+    .sidebar-info svg {
+        width: 18px;
+        height: 18px;
+    }
+
     .sidebar-bio {
         display: none;
     }
 
-    .main-body {
-        padding: 0.75rem 1rem;
+    .social-link svg {
+        width: 24px;
+        height: 24px;
     }
 
     .nav-links {
-        gap: 1rem;
+        gap: 1.25rem;
     }
 
-    .nav-link {
-        font-size: 0.85rem;
+    .page-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.375rem;
     }
 }

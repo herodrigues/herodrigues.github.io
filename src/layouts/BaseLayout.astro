@@ -3,13 +3,6 @@ import { SITE, THEME_CONFIG, ANALYTICS, THEMES } from "../config";
 import { ClientRouter } from "astro:transitions";
 import LeftSidebar from "../components/layout/LeftSidebar.astro";
 import RightMain from "../components/layout/RightMain.astro";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
-import "@fontsource/inter/800.css";
-import "@fontsource/jetbrains-mono/400.css";
-import "@fontsource/jetbrains-mono/500.css";
 import "katex/dist/katex.min.css";
 import "../styles/global.css";
 
@@ -21,6 +14,7 @@ const themeDark = THEMES[themeDarkKey] || THEMES.dark_default;
 
 interface Props {
     title: string;
+    fullTitle?: string;
     description?: string;
     ogImage?: string;
     ogType?: "website" | "article";
@@ -29,11 +23,15 @@ interface Props {
 
 const { 
     title, 
+    fullTitle,
     description = SITE.desc, 
     ogImage = SITE.ogImage,
     ogType = "website",
     robots = "index, follow"
 } = Astro.props;
+
+const documentTitle = fullTitle ?? `${title} | ${SITE.title}`;
+const socialTitle = fullTitle ?? title;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || SITE.website);
 
@@ -51,8 +49,9 @@ const jsonLd = {
 <html lang={SITE.lang}>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href={SITE.favicon} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" sizes="192x192" href={SITE.favicon} />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="generator" content={Astro.generator} />
 
@@ -101,22 +100,22 @@ const jsonLd = {
         <link rel="canonical" href={canonicalURL} />
 
         <!-- General Meta Tags -->
-        <title>{title} | {SITE.title}</title>
-        <meta name="title" content={`${title} | ${SITE.title}`} />
+        <title>{documentTitle}</title>
+        <meta name="title" content={documentTitle} />
         <meta name="description" content={description} />
         <meta name="author" content={SITE.author} />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content={ogType} />
         <meta property="og:url" content={Astro.url} />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={socialTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={new URL(ogImage, Astro.url)} />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={Astro.url} />
-        <meta property="twitter:title" content={title} />
+        <meta property="twitter:title" content={socialTitle} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={new URL(ogImage, Astro.url)} />
 
