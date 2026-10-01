@@ -1,0 +1,51 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { PAGES } from "../../config";
+
+if (PAGES.publications.isActive === false) {
+    return Astro.redirect("/404");
+}
+
+const entry = await getEntry("publications", "publications");
+const publications = [...(entry?.data.publications ?? [])].sort(
+    (a, b) => (b.year ?? 0) - (a.year ?? 0),
+);
+---
+
+<BaseLayout title={PAGES.publications.title}>
+    <header class="page-header">
+        <h1 class="page-title">{PAGES.publications.title}</h1>
+        <p class="page-subtitle">{PAGES.publications.subtitle}</p>
+    </header>
+
+    <div class="container-narrow">
+        <ol class="flex flex-col gap-6">
+            {
+                publications.map((pub) => (
+                    <li>
+                        <div class="title-md">
+                            {pub.title}
+                            {pub.pdf && (
+                                <a
+                                    href={pub.pdf}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="link body-sm whitespace-nowrap ml-1"
+                                >
+                                    [pdf]
+                                </a>
+                            )}
+                        </div>
+                        {pub.authors && <div class="body mt-1">{pub.authors}</div>}
+                        {(pub.venue || pub.year) && (
+                            <div class="body-sm italic opacity-75 mt-1">
+                                {[pub.venue, pub.year].filter(Boolean).join(", ")}
+                            </div>
+                        )}
+                    </li>
+                ))
+            }
+        </ol>
+    </div>
+</BaseLayout>

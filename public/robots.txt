@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hbrodrigues.com/sitemap-index.xml

@@ -1,0 +1,38 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { PAGES } from "../../config";
+
+if (PAGES.teaching.isActive === false) {
+    return Astro.redirect("/404");
+}
+
+const { title, subtitle } = PAGES.teaching;
+const entry = await getEntry("teaching", "teaching");
+const items = entry?.data.teaching ?? [];
+---
+
+<BaseLayout title={title}>
+    <header class="page-header">
+        <h1 class="page-title">{title}</h1>
+        <p class="page-subtitle">{subtitle}</p>
+    </header>
+
+    <div class="container-narrow">
+        <ul class="flex flex-col gap-6">
+            {
+                items.map((item) => (
+                    <li>
+                        <div class="title-md">{item.title}</div>
+                        {(item.institution || item.year) && (
+                            <div class="body-sm italic opacity-75 mt-1">
+                                {[item.institution, item.year].filter(Boolean).join(", ")}
+                            </div>
+                        )}
+                        {item.description && <p class="body mt-2">{item.description}</p>}
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</BaseLayout>

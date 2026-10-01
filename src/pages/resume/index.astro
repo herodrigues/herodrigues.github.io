@@ -1,0 +1,71 @@
+---
+import { getEntry, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Timeline from "../../components/ui/Timeline.astro";
+import { PAGES } from "../../config";
+
+if (PAGES.resume.isActive === false) {
+    return Astro.redirect("/404");
+}
+
+const resumeEntry = await getEntry("resume", "resume");
+if (!resumeEntry) {
+    throw new Error(
+        "Resume content not found. Please ensure src/content/resume.md exists.",
+    );
+}
+
+const { Content } = await render(resumeEntry);
+const { name, title, experience = [], education = [] } = resumeEntry.data;
+---
+
+<BaseLayout title={PAGES.resume.title}>
+    <header class="page-header">
+        <h1 class="page-title">{PAGES.resume.title}</h1>
+        <p class="page-subtitle">{PAGES.resume.subtitle}</p>
+    </header>
+
+    <div class="container-narrow">
+        {
+            experience.length > 0 && (
+                <section class="section">
+                    <h2 class="section-title border-b border-border pb-2">
+                        Professional Experience
+                    </h2>
+                    <Timeline items={experience.map(exp => ({
+                        title: exp.role,
+                        subtitle: exp.institution,
+                        location: exp.location,
+                        period: exp.period,
+                        description: exp.description,
+                        highlights: exp.highlights
+                    }))} />
+                </section>
+            )
+        }
+
+        {
+            education.length > 0 && (
+                <section class="section">
+                    <h2 class="section-title border-b border-border pb-2">
+                        Education
+                    </h2>
+                    <Timeline items={education.map(edu => ({
+                        title: edu.degree,
+                        subtitle: edu.institution,
+                        location: edu.location,
+                        period: edu.period,
+                        description: edu.description,
+                        thesis: edu.thesis,
+                        highlights: edu.highlights
+                    }))} />
+                </section>
+            )
+        }
+
+        <div class="prose max-w-none">
+            <Content />
+        </div>
+    </div>
+</BaseLayout>
+
