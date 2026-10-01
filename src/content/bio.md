@@ -7,7 +7,7 @@ institution: "Palmas, Tocantins, Brazil"
 
 Growing up in Brazil, I've always been drawn to understanding how things work at a fundamental level whether that's a search algorithm, a compliance system, or the electrical wiring of my home.
 
-My interest in computer science began in high school, when I earned an Integrated Technical High School Diploma in Information Technology at the Instituto Federal do Piauí. That's where I first discovered an aptitude for programming and problem solving. I went on to earn a BSc in Computer Science at the Universidade Federal do Tocantins, where my thesis covered the proximal point algorithm for minimizing convex functions of a single real variable. During my degree I also spent a year studying abroad at Macquarie University in Sydney, Australia, through the Science Without Borders program, which broadened both my technical and cultural perspective.
+My interest in computer science began in high school, when I earned an Integrated Technical High School Diploma in Information Technology at the Instituto Federal do Piauí. That's where I first discovered an aptitude for programming and problem solving. I went on to earn a BSc in Computer Science at the Universidade Federal do Tocantins, where my thesis covered the proximal point algorithm for minimizing convex functions of a single real variable. During my degree I also studied abroad at Macquarie University in Sydney, Australia, through the Science Without Borders program, which broadened both my technical and cultural perspective.
 
 ## Current Work
 
