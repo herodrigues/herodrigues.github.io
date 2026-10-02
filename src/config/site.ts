@@ -1,7 +1,7 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "https://hbrodrigues.com/",
+    website: "https://herodrigues.dev/",
     author: "Herinson Rodrigues",
     desc: "Personal website and blog of Herinson Rodrigues, software engineer.",
     title: "Herinson Rodrigues",

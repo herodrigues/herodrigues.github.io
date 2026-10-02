@@ -18,6 +18,13 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://hbrodrigues.com',
-  integrations: [sitemap()],
+  site: 'https://herodrigues.dev',
+  redirects: {
+    '/about': '/',
+  },
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes('/dev-tools/') && !page.includes('/404'),
+    }),
+  ],
 });

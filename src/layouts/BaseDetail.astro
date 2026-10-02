@@ -31,9 +31,12 @@ if (detail.extraInput) {
 
 const description = entry.data.description || detail.description || SITE.desc;
 const ogImage = entry.data.image || SITE.ogImage;
+const article = collection === "posts"
+    ? { publishedTime: entry.data.date, author: entry.data.author, tags: entry.data.tags }
+    : undefined;
 ---
 
-<BaseLayout title={detail.title} description={description} ogImage={ogImage} ogType="article">
+<BaseLayout title={detail.title} description={description} ogImage={ogImage} ogType="article" article={article}>
     <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
         <BackLink href={detail.backHref} label={collection} />
         {detail.externalUrl && (
